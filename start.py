@@ -24,3 +24,6 @@ def add_message():
     tag = request.form['tag']
     messages.append(Message(text, tag))
     return redirect(url_for('main'))
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
